@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Green Inbox</title>
+    <link type="text/css" rel="stylesheet" href="css/bootstrap.css" />
+    <link type="text/css" rel="stylesheet" href="css/default.css" />
+    <script src="js/jquery-1.8.1.min.js" type="text/javascript"></script>
+
+<body>
+    <div id="overlay"></div>
+    <div class="container">
+        <span style="padding: 2px;"></span>
+        <h1 style="font-size: 24pt; margin-bottom: 5px; align-items: center;">Green Inbox</h1>
+        <img src="https://aem.dropbox.com/cms/content/dam/dropbox/blog/files/2016/05/db_blog_springcleaning_mailbox.png"
+            style="float: left; margin: 20px 20px 0 100px; height: 250px; width: 500px;">
+        <br><br><br><br><br><br><br><br><br><br> <br><br><br><br><br>
+
+        <h2 class="storytitle">Welcome</h2>
+        <div class="well">
+            Hope you enjoy using my Chrome extension for Gmail.
+        </div>
+
+        <form>
+            <h2 class="storytitle first" style="float: left;">Accounts</h2>
+            <div class="well settings" style="clear: left;">
+
+                <p>
+                    Register from a gmail Account or choose Accounts to logout from.
+                </p>
+                <div id="LoggedInAccounts">
+                </div>
+                <br>
+                <button id="Register" class="btn btn-primary" style="margin-left: 130px;">Add another
+                    Account</button>
+                <button id="LogoutAll" class="btn btn-danger" style="margin-left: 80px;">Log out From All
+                    accounts</button>
+            </div>
+        </form>
+
+        <h3 class="storytitle first" style="float: left;"> Set Minutes after which to delete scheduled messages. </h3>
+        <div class="well settings" style="clear: left;">
+            <label for="delay" style="display:inline; font-size: 18px"> Minutes after which emails will be deleted:
+            </label>
+            <input id="delay" style="margin-left: 10px; width: 100px;" type="number">
+            <br>
+            <center> <button id="changeDelay" class="btn btn-primary">Set</button> </center>
+            <br>
+            <p style="font-size: 15px" id="curDelay"></p>
+        </div>
+
+    </div>
+    <script src="js/options.js" type="text/javascript"></script>
+</body>
+</head>
+
+</html>

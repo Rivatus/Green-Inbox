@@ -1,0 +1,49 @@
+table img[title$="pdf"], table img[title$="PDF"] {
+    width: 0px !important;
+    height: 0px !important;
+    padding-left: 16px !important;
+    padding-top: 16px !important;
+    background-position: top left !important;
+    background-image: url(https://mail.google.com/mail/u/0/images/pdf.gif) !important;
+}
+
+.gabButton {
+    border-bottom: solid 1px #E5E5E5;
+    padding: 0px 0px 0px 0px;
+    width: 22px;
+}
+
+.gabHorizontal {
+    padding: 0px 0px 0px 0px;
+    width: 22px;
+}
+
+.gabVertical {
+    border-bottom: solid 1px #E5E5E5;
+    padding: 0px 0px 0px 0px;
+    width: 22px;
+}
+
+.gab {
+    height: 19px !important;
+}
+
+.gabReadButton {
+    background: url(chrome-extension://__MSG_@@extension_id__/images/sprite-content-black.png) -0px -96px;
+    background-repeat: no-repeat;
+    width: 24px; /* width and height of the sprite image you want to display */
+    height: 24px;
+    margin-right: 2px;
+}
+
+.gabUnreadButton {
+    background: url(chrome-extension://__MSG_@@extension_id__/images/sprite-content-black.png) -0px -72px;
+    background-repeat: no-repeat;
+    width: 24px; /* width and height of the sprite image you want to display */
+    height: 24px;
+    margin-right: 2px;
+}
+
+td.yX {
+    padding-left: 0px;
+}

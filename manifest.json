@@ -1,0 +1,64 @@
+{
+    "manifest_version": 3,
+    "name": "Green Inbox",
+    "short_name": "Ginbox",
+    "version": "1.0",
+    "oauth2": {
+        "client_id": "put client_id here",
+        "scopes": [
+            "https://www.googleapis.com/auth/userinfo.email",
+            "https://www.googleapis.com/auth/gmail.modify"
+        ]
+    },
+    "author": "Arpit Kesharwani (rivatus3@gmail.com)",
+    "description": "A chrome extension that helps you keep inbox clean, by scheduling to delete unread and selected emails after a span of 30 days, timely mail deletion also reduces carbon footprint.",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "content_scripts": [
+        {
+            "all_frames": true,
+            "css": [
+                "css/gab.css"
+            ],
+            "js": [
+                "js/jquery-1.8.1.min.js",
+                "js/gmail.js"
+            ],
+            "matches": [
+                "https://mail.google.com/mail/*"
+            ],
+            "run_at": "document_end"
+        }
+    ],
+    "icons": {
+        "128": "icon/icon_128.png",
+        "16": "icon/icon_16.png",
+        "48": "icon/icon_48.png"
+    },
+    "web_accessible_resources": [
+        {
+            "resources": [
+                "images/sprite-content-black.png",
+                "icon/a.png",
+                "icon/b.png",
+                "dist/gmailJsLoader.js",
+                "dist/extension.js"
+            ],
+            "matches": [
+                "*://*/*"
+            ]
+        }
+    ],
+    "options_page": "options.html",
+    "permissions": [
+        "identity",
+        "identity.email",
+        "tabs",
+        "storage",
+        "alarms"
+    ],
+    "host_permissions": [
+        "*://*/"
+    ]
+}
