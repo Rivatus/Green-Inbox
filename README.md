@@ -13,6 +13,16 @@ emails this extension helps reduce carbon footprint. Hence is the name of this e
 - Automatically handles scheduling unread mails. 
 
 
+## Demonstration video
+
+Link to demo video explaining it's working: <a href="https://drive.google.com/file/d/1HR_NkTez36yzsLu6hWYNF_9D_vLnhhls/view?usp=sharing">Demo Video</a>
+
+## ScreenShots 
+
+<img src="./icon/ss1.PNG " width="100%">        
+<img src="./icon/ss2.PNG " width="100%">
+
+
 ## Features to add
 - Use an ML model to identify which emails to automatically add to deletion queue and which are important. 
 - Reduce memory usage of the extension itself and make icons more user friendly. 
