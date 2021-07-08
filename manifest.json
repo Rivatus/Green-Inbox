@@ -4,7 +4,7 @@
     "short_name": "Ginbox",
     "version": "1.0",
     "oauth2": {
-        "client_id": "put client_id here",
+        "client_id": "929501744323-c7as0qhnlnvmhu63ga6imvk2po77mhjm.apps.googleusercontent.com",
         "scopes": [
             "https://www.googleapis.com/auth/userinfo.email",
             "https://www.googleapis.com/auth/gmail.modify"
