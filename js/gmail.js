@@ -13,7 +13,6 @@ new WebKitMutationObserver(function (a, d) {
     }
     if (gmail.length) {
         this.disconnect();
-        console.log(gmail);
         proceedIfAuthorized();
     }
 }).observe(document, { subtree: !0, childList: !0, characterData: !1, attributes: !1 });
@@ -47,12 +46,10 @@ function Authorized() {
                 m.append(`<input type="image" class="scheduler" id=${messageId} data-tooltip="Schedule Deletion" src = ${imageUrl}></input>`)
                 $(this).parent().prev().after(m);
                 var isUnread = ($(this).parent().parent().attr("class").indexOf('zE') >= 0)
-                // console.log(isUnread);
                 m.on("click", handleClick);
                 const uniqueUserMessageId = gmail + messageId;
                 chrome.storage.sync.get(uniqueUserMessageId, (res) => {
                     const isthere = res[uniqueUserMessageId];
-                    // console.log(uniqueUserMessageId, isthere);
                     if (!isUnread && isthere == 3) removeScheduledDelete(messageId);
                     else if (isthere == 1 || isthere == 3) $("#" + messageId).attr("src", schedule_imageUrl);
                     else if (!isthere && isUnread) scheduledDelete(messageId);
