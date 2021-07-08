@@ -2,7 +2,7 @@
 
 
 const REDIRECT_URL = "https://localhost:6547/";
-const CLIENT_ID = "929501744323-c7as0qhnlnvmhu63ga6imvk2po77mhjm.apps.googleusercontent.com";
+const CLIENT_ID = "Put your clientId here";
 const SCOPES = ["openid", "email", "profile"];
 const AUTH_URL =
     `https://accounts.google.com/o/oauth2/auth\
